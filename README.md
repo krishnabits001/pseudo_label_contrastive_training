@@ -67,4 +67,9 @@ Example for ACDC dataset:<br/>
 
 **Bibtex citation:** 
 
-
+@article{chaitanya2021local,
+  title={Local contrastive loss with pseudo-label based self-training for semi-supervised medical image segmentation},
+  author={Chaitanya, Krishna and Erdil, Ertunc and Karani, Neerav and Konukoglu, Ender},
+  journal={arXiv preprint arXiv:2112.09645},
+  year={2021}
+}
