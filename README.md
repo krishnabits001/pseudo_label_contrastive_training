@@ -41,8 +41,12 @@ All the images were bias corrected using N4 algorithm with a threshold value of 
 Image and label pairs are re-sampled (to chosen target resolution) and cropped/zero-padded to a fixed size using "create_cropped_imgs.py" file. <br/>
 
 IV) Train the model.<br/>
-Below commands are an example for ACDC dataset.<br/> 
-The models can be trained using the script that does 2 steps: "train_model/pseudo_lbl_rand_init.sh" <br/>
+To do joint training run the script "pseudo_lbl_rand_init.sh" in train_model directory.<br/>
+For instance, if we want to train for ACDC dataset with 2 training volumes and configuration c1 use below step.<br/>
+bash pseudo_lbl_rand_init.sh tr2 c1 acdc
+
+<br/>
+Above command, executes the below 2 steps of training: <br/>
 Steps :<br/>
 1) In Step 1: Train a baseline network model to infer the initial pseudo-labels for unlabeled data. This training is only done once at the start. <br/> 
 cd train_model/ <br/>
